@@ -1,10 +1,22 @@
 console.log('JS Ok')
 
+// dichiarazioni variabili su dati utente
+
 const travelLenght = prompt('Inserisci la lunghezza del viaggio in KM');
 
 const age = prompt('Inserisci la tua età');
 
+// / dichiarazioni variabili su dati utente
+
+// calcolo prezzo al Km
+
 let priceForLenght = travelLenght * 0.21;
+
+// / calcolo prezzo al Km
+
+// dichiarazione if per sconti
+
+let finalPrice = priceForLenght;
 
 if (age < 18) {
     discount = (priceForLenght * 20 / 100);
@@ -20,7 +32,11 @@ if (age < 18) {
     finalPrice = priceForLenght;
 }
 
+// / dichiarazione if per sconti
+
 console.log(finalPrice);
+
+// creazione prezzo finale e stampe su schermo
 
 let ticketPrice = finalPrice.toFixed(2);
 
